@@ -1,0 +1,4 @@
+docker run -p 5432:5432 --name my-postgres -e POSTGRES_PASSWORD=pwd -d postgres
+alembic init alembic
+alembic revision --autogenerate -m "Create Users table"
+alembic upgrade head
